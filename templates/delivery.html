@@ -15,9 +15,9 @@
 <body>
     <div class="wrapper">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="{{ url_for('home') }}">
                         <img src="{{ url_for('static', filename='img/logo.png') }}" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -29,7 +29,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Каталог
                                 </a>
@@ -59,7 +59,7 @@
                                     <img src="{{ url_for('static', filename='img/person.svg') }}" alt="">
                                 </button>
                                 <a href="" class=cart"">
-                                    <img src="{{ url_for('static', filename='img/shopping-cart.svg') }}" alt="">
+                                    <img src="{{ url_for('static', filename='img/shopping-card.svg') }}" alt="">
                                 </a>
                             </div>
                         </div>
@@ -71,6 +71,7 @@
         <section class="delivery-content">
             <div class="container">
                 <div class="delivery-content-wrapper">
+                    <h1></h1>
                     <h1>Доставка</h1>
                     <p>
                         Нашим покупателям мы предлагаем большой ассортимент электроники известных брендов

@@ -8,16 +8,17 @@
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='fonts/ttnorms/stylesheet.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
     <title>ElectroCity</title>
 </head>
 
 <body>
     <div class="wrapper">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
-                      <img src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+                    <a class="navbar-brand" href="{{ url_for('home') }}">
+                        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -58,7 +59,7 @@
                                     <img src="{{ url_for('static', filename='img/person.svg') }}" alt="">
                                 </button>
                                 <a href="" class=cart"">
-                                    <img src="{{ url_for('static', filename='img/shopping-cart.svg') }}" alt="">
+                                    <img src="{{ url_for('static', filename='img/shopping-card.svg') }}" alt="">
                                 </a>
                             </div>
                         </div>
@@ -72,223 +73,223 @@
                 <div class="products-wrapper">
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="{{ url_for('static', filename='img/productbg.png') }}" alt="">
+                            <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
                         </div>
                         <a href="" class="title">Баран</a>
                         <p class="description">Какое-то описание</p>
                         <div class="price">
                             <b>999999 Р/очко</b>
                         </div>
-                        <a href="" class="to-cart">В корзину</a>
+                        <a href="{{ url_for('card') }}" class="to-cart">В корзину</a>
                     </div>
                 </div>
             </div>

@@ -59,7 +59,7 @@
                                 <img src="{{ url_for('static', filename='img/person.svg') }}" alt="">
                             </button>
                             <a href="" class=cart"">
-                                <img src="{{ url_for('static', filename='img/shopping-card.svg') }}" alt="">
+                                <img src="{{ url_for('static', filename='img/shopping-cart.svg') }}" alt="">
                             </a>
                         </div>
                     </div>
@@ -68,46 +68,41 @@
         </nav>
     </header>
 
-    <section class="payment-content">
+    <section class="card">
         <div class="container">
-            <div class="payment-content-wrapper">
-                <h1></h1>
-                <h1>Оплата</h1>
-                <p>
-                    Оплатить покупку в интернет-магазине ElectroCity можно несколькими способами:
-                </p>
-                <ul>
-                    <li>
-                        <h2>Наличный расчёт</h2>
-                        <p>Вы можете оплатить покупку наличными в магазине или курьеру (при доставке товара - доступно
-                            не во всех городах).</p>
-                    </li>
-                    <li>
-                        <h2>Пластиковые карты</h2>
-                        <p>Безналичная оплата банковской картой в магазине и при доставке. Принимаются карты следующих
-                            платёжных систем:
-                            «VISA», «MasterCard», «Золотая Корона», «МИР».</p>
-                    </li>
-                    <li>
-                        <h2>Кредит</h2>
-                        <p>Заявку на кредит можно оформить в магазине у кредитного эксперта одного из банков-партнеров.
-                            В разделе «Кредиты» Вы можете найти информацию о банках-партнёрах и их продуктах.</p>
-                    </li>
-                    <li>
-                        <h2>Безналичный расчет</h2>
-                        <p>Доступен для юридических лиц (ООО, ЧП, ИП и т.п.). Подробности в разделе «Заказ товара для
-                            юридических лиц»</p>
-                    </li>
-                    <li>
-                        <h2>Онлайн-оплата на сайте</h2>
-                        <p>Оплата осуществляется через компанию-партнера - ЮKassa. Комиссия не взимается. К оплате
-                            принимаются кошельки WebMoney, банковские карты, QIWI-кошельки и кошельки ЮMoney. </p>
-                    </li>
-                </ul>
+            <div class="card-top">
+                <div class="card-img">
+                    <img src="{{ url_for('static', filename='img/product-bg.svg') }}" alt="">
+                </div>
+                <div class="card-sidebar">
+                    <div class="title">Баранье очко 250 гривен</div>
+                    <div class="price">
+                        <span>Цена:</span> <b>1 050 Р</b>
+                    </div>
+                    <div class="price">
+                        <span>Количество:</span>
+                        <div class="input_range">
+                            <span class="min button">-</span>
+                            <input type="text" name="qty" id="qty" maxlength="12"/>
+                            <span class="plus button">+</span>
+                        </div>
+                    </div>
+                    <div class="to-pay">
+                        <span>Итого к оплате</span>
+                    <b>1 050 Р</b>
+                    </div>
+                    <div class="pay-block">
+                        <button class="pay-popup">Купить</button>
+                        <button class="cart-add">
+                            <img src="{{ url_for('static', filename='img/shopping-card.svg') }}" alt="">
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -115,6 +110,31 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+<script>
+      jQuery(function(){
+      var j = jQuery; //Just a variable for using jQuery without conflicts
+      var addInput = '#qty'; //This is the id of the input you are changing
+      var n = 1; //n is equal to 1
+
+      //Set default value to n (n = 1)
+      j(addInput).val(n);
+
+      //On click add 1 to n
+      j('.plus').on('click', function(){
+        j(addInput).val(++n);
+      })
+
+      j('.min').on('click', function(){
+        //If n is bigger or equal to 1 subtract 1 from n
+        if (n >= 1) {
+          j(addInput).val(--n);
+        } else {
+          //Otherwise do nothing
+        }
+      });
+    });
+</script>
+
 
 </body>
 

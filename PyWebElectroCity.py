@@ -19,5 +19,10 @@ def payment():
     return render_template('payment.html')
 
 
+@app.route('/card')
+def card():
+    return render_template('card.html')
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1', debug=True)
